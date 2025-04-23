@@ -240,6 +240,36 @@ public class CraftableCapesDataGenerator implements DataGeneratorEntrypoint {
 				.pattern("RYB")
 				.criterion("haswool", VanillaRecipeProvider.conditionsFromTag(ItemTags.WOOL))
 				.offerTo(exporter);
+			
+			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_MOVIE_HOME)
+					.input('G', Items.GRASS)
+					.input('C', Items.CYAN_WOOL)
+					.input('B', Items.LIGHT_BLUE_WOOL)
+					.pattern("BBB")
+					.pattern("BCB")
+					.pattern("BGB")
+					.criterion("haswool", VanillaRecipeProvider.conditionsFromTag(ItemTags.WOOL))
+					.offerTo(exporter);
+			
+			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_MOVIE_MENACE)
+					.input('M', Items.MAGENTA_WOOL)
+					.input('R', Items.RED_WOOL)
+					.input('P', Items.PURPLE_WOOL)
+					.pattern("RRR")
+					.pattern("RMR")
+					.pattern("RPR")
+					.criterion("haswool", VanillaRecipeProvider.conditionsFromTag(ItemTags.WOOL))
+					.offerTo(exporter);
+			
+			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_YEARN)
+					.input('B', Items.BLACK_WOOL)
+					.input('G', Items.LIGHT_GREY_WOOL)
+					.input('X', Items.BROWN_INGOT)
+					.pattern("GGG")
+					.pattern("GBG")
+					.pattern("XXX")
+					.criterion("haswool", VanillaRecipeProvider.conditionsFromTag(ItemTags.WOOL))
+					.offerTo(exporter);
 		}
 
 		void basicCapeRecipe(RecipeExporter exporter, Cape output, Item wool, Item item) {
