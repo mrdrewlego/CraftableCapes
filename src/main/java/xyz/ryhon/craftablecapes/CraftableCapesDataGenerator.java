@@ -242,7 +242,7 @@ public class CraftableCapesDataGenerator implements DataGeneratorEntrypoint {
 				.offerTo(exporter);
 			
 			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_MOVIE_HOME)
-					.input('G', Items.GRASS)
+					.input('G', Items.GREEN_WOOL)
 					.input('C', Items.CYAN_WOOL)
 					.input('B', Items.LIGHT_BLUE_WOOL)
 					.pattern("BBB")
@@ -263,8 +263,8 @@ public class CraftableCapesDataGenerator implements DataGeneratorEntrypoint {
 			
 			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_YEARN)
 					.input('B', Items.BLACK_WOOL)
-					.input('G', Items.LIGHT_GREY_WOOL)
-					.input('X', Items.BROWN_INGOT)
+					.input('G', Items.LIGHT_GRAY_WOOL)
+					.input('X', Items.BROWN_WOOL)
 					.pattern("GGG")
 					.pattern("GBG")
 					.pattern("XXX")
