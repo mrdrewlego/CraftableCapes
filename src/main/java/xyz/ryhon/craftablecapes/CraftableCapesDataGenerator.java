@@ -261,7 +261,7 @@ public class CraftableCapesDataGenerator implements DataGeneratorEntrypoint {
 					.criterion("haswool", VanillaRecipeProvider.conditionsFromTag(ItemTags.WOOL))
 					.offerTo(exporter);
 			
-			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_YEARN)
+			ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, CraftableCapes.CAPE_MOVIE_YEARN)
 					.input('B', Items.BLACK_WOOL)
 					.input('G', Items.LIGHT_GRAY_WOOL)
 					.input('X', Items.BROWN_WOOL)
